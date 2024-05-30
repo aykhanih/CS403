@@ -40,7 +40,8 @@ console.log(arr2.slice(2, 8));
 
 // 2.Change Gulshen to Rovshen 
 
-arr2.splice(4, 1, "Rovshen");
+const change = arr2.map(item => item.replace("Gulshen","Rovshen"))
+console.log(change);
 
 // 3.Console each name with map
 
