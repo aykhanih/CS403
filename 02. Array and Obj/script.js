@@ -40,7 +40,7 @@ console.log(arr2.slice(2, 8));
 
 // 2.Change Gulshen to Rovshen 
 
-const change = arr2.map(item => item.replace("Gulshen","Rovshen"))
+const change = arr2.map(item => item.replace("Gulshen", "Rovshen"))
 console.log(change);
 
 // 3.Console each name with map
@@ -277,7 +277,7 @@ console.log(arr.length - newArr.length);
 let sum = 0
 let inx7 = arr.map((el, index) => el === 7 ? index : false).filter(index => index !== false)
 console.log(inx7);
-inx7.map((test, index) => sum += test)
+inx7.map((test) => sum += test)
 console.log(sum);
 
 
@@ -384,11 +384,11 @@ console.log(arr4.find((obj) => obj.key === maxKeyLength));
 
 // 24 arr2 de terkibinde 2 'L' herfi olan obyekt(ler)in index(ler)ini tapin.
 
-let array5 = arr4.filter((obj) => obj.name.includes("l") && obj.name.split("l").length - 1 === 2)
+let array5 = arr4.filter((obj) => obj.name.split("l").length - 1 === 2)
 console.log(array5.map((obj) => arr4.indexOf(obj)));
 
 // 25 arr2 de terkibinde 2 't' herfi olan obyekt(ler)in key(ler)ini tapin.
 
-let array6 = arr4.filter((obj) => obj.name.includes("t") && obj.name.split("t").length - 1 === 2)
+let array6 = arr4.filter((obj) => obj.name.split("t").length - 1 === 2)
 console.log(array6.map((obj) => obj.key)); // keyləri göstərir
 console.log(array6.map((obj) => obj.name)); // nameləri göstərir (for myself)
